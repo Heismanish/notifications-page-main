@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Primary */
+	--Red: hsl(1, 90%, 64%);
+	--Blue: hsl(219, 85%, 26%);
+
+	/* Neutrals */
+	--White: hsl(0, 0%, 100%);
+	--Verylightgrayishblue: hsl(210, 60%, 98%);
+	--Lightgrayishblue1: hsl(211, 68%, 94%);
+	--Lightgrayishblue2: hsl(205, 33%, 90%);
+	--Grayishblue: hsl(219, 14%, 63%);
+	--Darkgrayishblue: hsl(219, 12%, 42%);
+	--Verydarkblue: hsl(224, 21%, 14%);
+
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+	width: min(65%, 760px);
+	margin: 5rem auto;
+	padding: 4rem;
+	box-shadow: 1rem 1rem 12rem 5rem rgba(229, 239, 250, 0.5);
+	border-radius: 10px;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.num {
+	/* display: inline-block; */
+	text-decoration: none;
+	color: var(--White);
+	padding: 0.3rem 1.5rem;
+	background-color: var(--Blue);
+	border-radius: 1rem;
+	margin-left: 4px;
+}
+
+.nav-right {
+	font-size: 1.4rem;
+	color: var(--Grayishblue);
+	transition: all 0.5s;
+}
+.nav-right:active,
+.nav-right:hover {
+	color: var(--Blue);
+	cursor: pointer;
+}
+
+.stack {
+	padding: 3rem 0 0 0;
+}
+
+.profile {
+	justify-content: flex-start;
+}
+.notifications {
+	margin-bottom: 0.8rem;
+	border-radius: 1rem;
+	padding: 1rem 1rem;
+}
+
+.name {
+	text-decoration: none;
+	font-weight: 800;
+	color: black;
+}
+.name:hover,
+.name:active {
+	color: var(--Blue);
+	cursor: pointer;
+}
+.message-container {
+	margin-left: 1.4rem;
+}
+.message {
+	font-size: 1.3rem;
+}
+.red-dot {
+	/* content: " "; */
+	height: 6px;
+	width: 6px;
+	background-color: var(--Red);
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 5px;
+}
+.unread {
+	background-color: var(--Lightgrayishblue1);
+}
+.image {
+	height: 5rem;
+	align-self: flex-start;
+}
+.time {
+	margin-top: 6px;
+	color: var(--Grayishblue);
+	font-size: 1.2rem;
+}
+.highlight {
+	color: var(--Darkgrayishblue);
+	font-weight: 800;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.highlight:active,
+.highlight:hover {
+	color: var(--Blue);
+	cursor: pointer;
+}
+
+.pvt-msg {
+	margin-top: 1rem;
+	padding: 1rem 1.5rem;
+	border: solid var(--Grayishblue) 1px;
+	border-radius: 4px;
+	color: var(--Darkgrayishblue);
+	font-size: 1.2rem;
+	line-height: 1.4;
+	letter-spacing: 1.3x;
+
+	transition: all 0.5s;
+}
+
+.pvt-msg:hover {
+	background-color: var(--Lightgrayishblue1);
+	border: solid var(--Lightgrayishblue1) 1px;
+}
+
+.chess-img {
+	height: 5rem;
+	margin-left: auto;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 560px) {
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+}
